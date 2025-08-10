@@ -2,7 +2,7 @@ import random
 
 print('When prompted for an answer, type only the alphabet\n')
 
-ip_file = '/Users/macbook/Desktop/project/practice_python_projects/programs/mcq/question_and_answers.txt'
+ip_file = 'question_and_answers.txt'
 question_blocks = open(ip_file).read().rstrip().split('\n\n')
 random.shuffle(question_blocks)
 

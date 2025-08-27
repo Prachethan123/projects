@@ -18,7 +18,7 @@ for block in question_blocks:
             choice = choice[4:]
             answer = option
         print(f'{option}) {choice[choice.find(" ")+1:]}')
-
+`~`
     usr_ip = input('\nEnter you answer: ')
     if usr_ip == answer:
         correct_answers += 1

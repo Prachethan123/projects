@@ -6,7 +6,7 @@ ip_file = 'question_and_answers.txt'
 question_blocks = open(ip_file).read().rstrip().split('\n\n')
 random.shuffle(question_blocks)
 
-total_questions =10
+total_questions =0
 correct_answers = 0
 for block in question_blocks:
     total_questions += 1
@@ -18,7 +18,6 @@ for block in question_blocks:
             choice = choice[4:]
             answer = option
         print(f'{option}) {choice[choice.find(" ")+1:]}')
-`~`
     usr_ip = input('\nEnter you answer: ')
     if usr_ip == answer:
         correct_answers += 1

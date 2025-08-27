@@ -6,7 +6,7 @@ ip_file = 'question_and_answers.txt'
 question_blocks = open(ip_file).read().rstrip().split('\n\n')
 random.shuffle(question_blocks)
 
-total_questions = 0
+total_questions =10
 correct_answers = 0
 for block in question_blocks:
     total_questions += 1
